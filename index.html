@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>night sky</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="main">
+    <div class="main-box">
+        <div class="forest"></div>
+        <div class="galaxy"></div>
+        <div class="starship fly"></div>
+        <div class="starship fly_1"></div>
+        <div class="star-1 light_star"></div>
+        <div class="star-2 light_star delay-1"></div>
+        <div class="star-3 light_star delay-2"></div>
+        <div class="star-4 light_star delay-3"></div>
+        <div class="star-5 light_star delay-4"></div>
+        <div class="star-6 light_star delay-5"></div>
+        <div class="star-7 light_star delay-1"></div>
+        <div class="star-8 light_star delay-2"></div>
+        <div class="star-9 light_star delay-3"></div>
+        <div class="star-10 light_star delay-4"></div>
+        <div class="star-11 light_star delay-5"></div>
+        <div class="star-12 light_star delay-1"></div>
+        <div class="star-13 light_star delay-2"></div>
+        <div class="star-14 light_star delay-3"></div>
+        <div class="star-15 light_star delay-4"></div>
+        <div class="planet spin-1"></div>
+        <a class="autor_link scale" href="http://khmelnickiy.ru">
+            !
+        </a>
+
+    </div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('a').hover(
+            function () {
+                $(this).removeClass('scale')
+            },
+            function () {
+                $(this).addClass('scale')
+            }
+        )
+    });
+</script>
+</body>
+</html>

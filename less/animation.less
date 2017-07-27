@@ -1,0 +1,154 @@
+@keyframes light_star {
+  0%{
+    opacity: 0.1;
+    box-shadow: 0 0 5px 3px rgba(255,255,255,0.05);
+  }
+  10%{
+    opacity: 0.9;
+    box-shadow: 0 0 5px 3px rgba(255,255,255,0.7)
+  }
+  20%{
+    opacity: 1;
+    box-shadow: 0 0 5px 3px rgba(255,255,255,1)
+  }
+70%{
+  opacity: 0.1;
+  box-shadow: 0 0 5px 3px rgba(255,255,255,0.2)
+}
+  100%{
+    opacity: 0.1;
+    box-shadow: 0 0 10px 5px rgba(255,255,255,0.001);
+
+  }
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opasity {
+  0%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+@keyframes fly {
+  0% {
+    box-shadow: 0 0 22px 6px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -2%;
+    left: 87%;
+    z-index: 11;
+  }
+  10% {
+    box-shadow: 0 0 22px 6px rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 102%;
+    left: 15%;
+    z-index: 11;
+  }
+  100% {
+    box-shadow: 0 0 22px 6px rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 102%;
+    left: 15%;
+    z-index: 11;
+  }
+}
+@keyframes fly_1 {
+  0%{
+    box-shadow: 0 0 22px 6px rgba(255,255,255,0.3);
+    position: absolute;
+    top: -2%;
+    left: 63%;
+    z-index: 11;
+  }
+  10%{
+    box-shadow: 0 0 22px 6px rgba(255,255,255,1);
+    position: absolute;
+    top: 102%;
+    left: 15%;
+    z-index: 11;
+  }
+  100%{
+    box-shadow: 0 0 22px 6px rgba(255,255,255,1);
+    position: absolute;
+    top: 102%;
+    left: 15%;
+    z-index: 11;
+  }
+}
+
+@keyframes scale {
+  0%{
+    transform: scale(0.9, 0.9);
+  }
+  100%{
+    transform: scale(1.0, 1.0);
+  }
+}
+
+.light_star{
+  animation: light_star 5s;
+  animation-iteration-count: infinite;
+
+
+}
+
+.delay-1{
+  animation-delay: 1s;
+}
+.delay-2{
+  animation-delay: 2s;
+}
+.delay-3{
+  animation-delay: 3s;
+}
+.delay-4{
+  animation-delay: 4s;
+}
+.delay-5{
+  animation-delay: 5s;
+}
+
+.spin-1{
+  animation: spin 700s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.spin-2{
+  animation: spin 1400s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.fly{
+  animation: fly 20s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.fly_1{
+  animation: fly_1 11s;
+  animation-delay: 10s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.scale{
+  animation: scale 550ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
